@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ACC Control Panel</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <script src="http://threejs.org/build/three.min.js"></script>
+    <script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body>
+    <div id="car-list-panel">
+        <h3 id="car-list-header">Car List</h3>
+        <div id="car-list" class="scroll">
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>title</h3>
+                                <p>description</p>
+                                <p>status</p>
+                                <div class="card__rating">
+                                    <span>8.0 </span>
+                                    <span class="card__stars--active">★★★</span>
+                                    <span class="card__stars--inactive">★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Car</h6>
+                            <p>Press button</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>title</h3>
+                                <p>description</p>
+                                <div class="card__rating">
+                                    <span>8.0 </span>
+                                    <span class="card__stars--active">★★★</span>
+                                    <span class="card__stars--inactive">★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Car</h6>
+                            <p>Press button</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>title</h3>
+                                <p>description</p>
+                                <div class="card__rating">
+                                    <span>8.0 </span>
+                                    <span class="card__stars--active">★★★</span>
+                                    <span class="card__stars--inactive">★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Car</h6>
+                            <p>Press button</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>title</h3>
+                                <p>description</p>
+                                <div class="card__rating">
+                                    <span>8.0 </span>
+                                    <span class="card__stars--active">★★★</span>
+                                    <span class="card__stars--inactive">★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Car</h6>
+                            <p>Press button</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>title</h3>
+                                <p>description</p>
+                                <div class="card__rating">
+                                    <span>8.0 </span>
+                                    <span class="card__stars--active">★★★</span>
+                                    <span class="card__stars--inactive">★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Car</h6>
+                            <p>Press button</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>title</h3>
+                                <p>description</p>
+                                <div class="card__rating">
+                                    <span>8.0 </span>
+                                    <span class="card__stars--active">★★★</span>
+                                    <span class="card__stars--inactive">★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Car</h6>
+                            <p>Press button</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>title</h3>
+                                <p>description</p>
+                                <div class="card__rating">
+                                    <span>8.0 </span>
+                                    <span class="card__stars--active">★★★</span>
+                                    <span class="card__stars--inactive">★★</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h6>Car</h6>
+                            <p>Press button</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="project-footer">
+            Copyright by ACC 2019
+        </div>
+    </div>
+    <div id="acc-presentation">
+        <h3 id="acc-presentation-header">Car Panel</h3>
+    </div>
+</body>
+
+</html>
