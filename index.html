@@ -15,7 +15,12 @@
 
 <body>
     <div id="car-list-panel">
-        <h3 id="car-list-header">Car List</h3>
+        <div class="material-dark-header">
+            <div class="material-car-header">
+                Car List
+            </div>
+        </div>
+
         <div id="car-list" class="scroll">
             <div id="car-card" class="card">
                 <div class="flip-card">
@@ -169,7 +174,11 @@
         </div>
     </div>
     <div id="acc-presentation">
-        <h3 id="acc-presentation-header">Car Panel</h3>
+        <div class="material-dark-header">
+            <div class="material-car-header">
+                Car List
+            </div>
+        </div>
         <div class="car-details">
             <div id="car1" class="car-details-content">
                 <div>
@@ -190,7 +199,7 @@
                 </div>
             </div>
         </div>
-        
+
 
     </div>
     <script>
@@ -198,11 +207,11 @@
             $("#acc-presentation > .car-details > div:gt(0)").hide();
             $(".flip-card-back a").on("click", function (e) {
                 var href = $(this).attr("href");
-                $("#acc-presentation > div > " + href).show();
-                $("#acc-presentation > div > :not(" + href + ")").hide();
+                $("#acc-presentation > .car-details > " + href).show();
+                $("#acc-presentation > .car-details > :not(" + href + ")").hide();
             });
         });
-        </script>
+    </script>
 </body>
 
 

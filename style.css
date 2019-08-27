@@ -1,6 +1,6 @@
 html{
     margin: 0;
-    background-color: #434341;
+    background-color: black;
 }
 
 #car-list{
@@ -33,7 +33,7 @@ a{
 div.scroll{
     margin: 4px, 4px;
     padding-left: 0px;
-    background-color: #434341;
+    background-color: black;
     width: 100%;
     height: 85%;
     overflow-x: auto;
@@ -42,21 +42,19 @@ div.scroll{
 
 
 #acc-presentation{
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     width: 80%;
     height: 100vh;
 }
 
 #acc-presentation-header{
-    color:#434341;
-    background-color: white;
-    border-bottom: #434341;
-    border-style: hidden hidden solid hidden;
+    color:white;
+    background-color: #434341;
 }
 
 #car-list-panel{
-    background-color: #434341;
+    background-color: black;
     color: white;
     width: 20%;
     height: 100vh;
@@ -64,13 +62,18 @@ div.scroll{
 
 #car-list-header{
     color:white;    
-    border-bottom: white;
-    border-style: hidden hidden solid hidden;
+    background-color: #434341;
+    color: white;
+}
+
+.material-dark-header{
+    background-color: #434341;
+    height: 50px;
+    margin-bottom: 8px
 }
 
 h3{
-    margin: 4px;
-    padding: 4px;
+    
 }
 
 #project-footer{
@@ -80,6 +83,8 @@ h3{
 }
 
 .car-details{
+    background-color: #434341;
+    color: white;
     margin: 4px;
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
     border-radius: 5px;
@@ -94,7 +99,7 @@ h3{
 
 /* Flip card part */
 .card{
-    height: 110px;
+    height: 120px;
     border-radius: 5px;
     margin: 2px 4px;
     padding: 2px 4px;    
@@ -131,8 +136,8 @@ h3{
 }
 
 .flip-card-front {
-    background-color: white;
-    color: black;
+    background-color: #434341;
+    color: white;
     border-radius: 5px;
 }
 
