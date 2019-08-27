@@ -17,7 +17,7 @@
     <div id="car-list-panel">
         <div class="material-dark-header">
             <div class="material-car-header">
-                
+
             </div>
         </div>
 
@@ -175,20 +175,26 @@
     </div>
     <div id="acc-presentation">
         <div class="material-dark-header">
-            <div class="material-car-header">
-                Autonomous Car Cooperation control panel
+            <div id="homepage" class="material-car-header">
+                <a href="#home">Autonomous Car Cooperation control panel</a>
             </div>
         </div>
         <div class="car-details">
+            <div id="home" class="car-details-content">
+                <div>
+                    <h3>Home</h3>
+                    <p>main page</p>
+                </div>
+            </div>
             <div id="car1" class="car-details-content">
                 <div>
-                    <h2>Car 1</h2>
+                    <h3>Car 1</h3>
                     <p>car description</p>
                 </div>
             </div>
             <div id="car2" class="car-details-content">
                 <div>
-                    <h2>Car 2</h2>
+                    <h3>Car 2</h3>
                     <p>car description</p>
                 </div>
             </div>
@@ -206,6 +212,15 @@
         $(function () {
             $("#acc-presentation > .car-details > div:gt(0)").hide();
             $(".flip-card-back a").on("click", function (e) {
+                var href = $(this).attr("href");
+                $("#acc-presentation > .car-details > " + href).show();
+                $("#acc-presentation > .car-details > :not(" + href + ")").hide();
+            });
+        });
+
+        $(function () {
+            $("#acc-presentation > .car-details > div:gt(0)").hide();
+            $("#homepage a").on("click", function (e) {
                 var href = $(this).attr("href");
                 $("#acc-presentation > .car-details > " + href).show();
                 $("#acc-presentation > .car-details > :not(" + href + ")").hide();

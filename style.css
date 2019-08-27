@@ -98,7 +98,7 @@ h3{
 .car-details{
     background-color: #434341;
     color: white;
-    margin: 4px;
+    
     box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.5);
     border-radius: 5px;
     height: 90%;
@@ -106,7 +106,8 @@ h3{
 
 .car-details-content{
     margin: 4px;
-    padding: 16px;
+    padding-top: 4px;
+    padding-left: 16px;
 }
 
 
