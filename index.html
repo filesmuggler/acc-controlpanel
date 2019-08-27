@@ -10,6 +10,7 @@
     <script src="http://threejs.org/examples/js/controls/OrbitControls.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -22,20 +23,50 @@
                         <div class="flip-card-front">
                             <img src="car-128.png" alt="Avatar" id="car-image">
                             <div class="flip-card-front-content">
-                                <h3>title</h3>
+                                <h3>Car 1</h3>
                                 <p>description</p>
                                 <p>status</p>
-                                <div class="card__rating">
-                                    <span>8.0 </span>
-                                    <span class="card__stars--active">★★★</span>
-                                    <span class="card__stars--inactive">★★</span>
-                                </div>
                             </div>
                         </div>
                         <div class="flip-card-back">
-                            <h6>Car</h6>
-                            <p>Press button</p>
-
+                            <h3>Car 1</h3>
+                            <a href="#car1">Press to see details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>Car 2</h3>
+                                <p>description</p>
+                                <p>status</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Car 2</h3>
+                            <a href="#car2">Press to see details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="car-card" class="card">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="car-128.png" alt="Avatar" id="car-image">
+                            <div class="flip-card-front-content">
+                                <h3>Car 3</h3>
+                                <p>description</p>
+                                <p>status</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <h3>Car 3</h3>
+                            <a href="#car3">Press to see details</a>
                         </div>
                     </div>
                 </div>
@@ -132,53 +163,6 @@
                     </div>
                 </div>
             </div>
-            <div id="car-card" class="card">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="car-128.png" alt="Avatar" id="car-image">
-                            <div class="flip-card-front-content">
-                                <h3>title</h3>
-                                <p>description</p>
-                                <div class="card__rating">
-                                    <span>8.0 </span>
-                                    <span class="card__stars--active">★★★</span>
-                                    <span class="card__stars--inactive">★★</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <h6>Car</h6>
-                            <p>Press button</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="car-card" class="card">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="car-128.png" alt="Avatar" id="car-image">
-                            <div class="flip-card-front-content">
-                                <h3>title</h3>
-                                <p>description</p>
-                                <div class="card__rating">
-                                    <span>8.0 </span>
-                                    <span class="card__stars--active">★★★</span>
-                                    <span class="card__stars--inactive">★★</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flip-card-back">
-                            <h6>Car</h6>
-                            <p>Press button</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
         <div id="project-footer">
             Copyright by ACC 2019
@@ -186,7 +170,41 @@
     </div>
     <div id="acc-presentation">
         <h3 id="acc-presentation-header">Car Panel</h3>
+        <div class="car-details">
+            <div id="car1" class="car-details-content">
+                <div>
+                    <h2>Car 1</h2>
+                    <p>car description</p>
+                </div>
+            </div>
+            <div id="car2" class="car-details-content">
+                <div>
+                    <h2>Car 2</h2>
+                    <p>car description</p>
+                </div>
+            </div>
+            <div id="car3" class="car-details-content">
+                <div>
+                    <h2>Car 3</h2>
+                    <p>car description</p>
+                </div>
+            </div>
+        </div>
+        
+
     </div>
+    <script>
+        $(function () {
+            $("#acc-presentation > .car-details > div:gt(0)").hide();
+            $(".flip-card-back a").on("click", function (e) {
+                var href = $(this).attr("href");
+                $("#acc-presentation > div > " + href).show();
+                $("#acc-presentation > div > :not(" + href + ")").hide();
+            });
+        });
+        </script>
 </body>
+
+
 
 </html>
