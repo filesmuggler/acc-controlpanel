@@ -63,17 +63,30 @@ div.scroll{
 #car-list-header{
     color:white;    
     background-color: #434341;
-    color: white;
+    
 }
 
 .material-dark-header{
     background-color: #434341;
-    height: 50px;
-    margin-bottom: 8px
+    height: 40px;
+    color: white;
+    margin-bottom: 8px;
+    padding: 8px;
 }
 
+.material-car-header{
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    font-size: 20px;    
+    font-weight: 400;
+}
+
+h2{
+    font-weight: 400;  
+}
 h3{
-    
+    font-weight: 400;
 }
 
 #project-footer{
@@ -103,6 +116,7 @@ h3{
     border-radius: 5px;
     margin: 2px 4px;
     padding: 2px 4px;    
+    font-weight: 400;
 }
 
 .flip-card {
